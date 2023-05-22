@@ -33,7 +33,7 @@
         - package
 
     - apt_repository:
-        repo: http://dl.bintray.com/rabbitmq-erlang/debian bionic erlang
+        repo: deb http://dl.bintray.com/rabbitmq-erlang/debian bionic erlang
         state: present
       tags:
         - package
