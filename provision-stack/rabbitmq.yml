@@ -33,7 +33,7 @@
         - package
 
     - apt_repository:
-        repo: deb http://archive.debian.org/debian stretch main contrib non-free
+        repo: http://dl.bintray.com/rabbitmq-erlang/debian bionic erlang
         state: present
       tags:
         - package
