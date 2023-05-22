@@ -45,7 +45,5 @@
         dest: files/db_backup.sql
 
 
-
-
-     - name: Copy SQL file to files directory
-        command: "cp Vprofile-repo/src/main/resources/db_backup.sql files/"
+    - name: Copy SQL file to files directory
+      command: "cp Vprofile-repo/src/main/resources/db_backup.sql files/"
