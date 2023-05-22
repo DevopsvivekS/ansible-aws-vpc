@@ -1,0 +1,121 @@
+2023-05-22 14:33:24,370 p=1123 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] *************************
+2023-05-22 14:33:24,395 p=1123 u=ubuntu n=ansible | TASK [Gathering Facts] ************************************************************************
+2023-05-22 14:33:26,128 p=1123 u=ubuntu n=ansible | ok: [localhost]
+2023-05-22 14:33:26,143 p=1123 u=ubuntu n=ansible | TASK [Install  jdk, maven, git] ***************************************************************
+2023-05-22 14:33:45,575 p=1123 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-05-22 14:34:38,173 p=1123 u=ubuntu n=ansible | changed: [localhost] => (item=openjdk-8-jdk)
+2023-05-22 14:34:47,893 p=1123 u=ubuntu n=ansible | changed: [localhost] => (item=maven)
+2023-05-22 14:34:47,907 p=1123 u=ubuntu n=ansible | TASK [Clone source code from github] **********************************************************
+2023-05-22 14:34:52,557 p=1123 u=ubuntu n=ansible | changed: [localhost]
+2023-05-22 14:34:52,569 p=1123 u=ubuntu n=ansible | TASK [mvn install command to build artifact] **************************************************
+2023-05-22 14:35:35,096 p=1123 u=ubuntu n=ansible | changed: [localhost]
+2023-05-22 14:35:35,124 p=1123 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] ******************************************************
+2023-05-22 14:35:36,330 p=1123 u=ubuntu n=ansible | failed: [localhost] (item=/home/ubuntu/ansible-aws-vpc/provision-stack/Vprofile-repo/target/vprofile-v2.war) => {"ansible_loop_var": "item", "changed": false, "checksum": "86ad2490bf8d54133c93c02e6a9cccadda1c5d2a", "item": "/home/ubuntu/ansible-aws-vpc/provision-stack/Vprofile-repo/target/vprofile-v2.war", "msg": "Destination directory files does not exist"}
+2023-05-22 14:35:36,336 p=1123 u=ubuntu n=ansible | PLAY RECAP ************************************************************************************
+2023-05-22 14:35:36,336 p=1123 u=ubuntu n=ansible | localhost                  : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-22 14:37:58,959 p=7068 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ***************************************************
+2023-05-22 14:37:58,982 p=7068 u=ubuntu n=ansible | TASK [Gathering Facts] **************************************************************************************************
+2023-05-22 14:38:00,451 p=7068 u=ubuntu n=ansible | ok: [localhost]
+2023-05-22 14:38:00,467 p=7068 u=ubuntu n=ansible | TASK [Install  jdk, maven, git] *****************************************************************************************
+2023-05-22 14:38:03,415 p=7068 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-05-22 14:38:05,867 p=7068 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-05-22 14:38:08,326 p=7068 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-05-22 14:38:08,337 p=7068 u=ubuntu n=ansible | TASK [Clone source code from github] ************************************************************************************
+2023-05-22 14:38:09,282 p=7068 u=ubuntu n=ansible | ok: [localhost]
+2023-05-22 14:38:09,292 p=7068 u=ubuntu n=ansible | TASK [mvn install command to build artifact] ****************************************************************************
+2023-05-22 14:38:09,305 p=7068 u=ubuntu n=ansible | skipping: [localhost]
+2023-05-22 14:38:09,315 p=7068 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] ********************************************************************************
+2023-05-22 14:38:10,360 p=7068 u=ubuntu n=ansible | failed: [localhost] (item=/home/ubuntu/ansible-aws-vpc/provision-stack/Vprofile-repo/target/vprofile-v2.war) => {"ansible_loop_var": "item", "changed": false, "checksum": "86ad2490bf8d54133c93c02e6a9cccadda1c5d2a", "item": "/home/ubuntu/ansible-aws-vpc/provision-stack/Vprofile-repo/target/vprofile-v2.war", "msg": "Destination directory files does not exist"}
+2023-05-22 14:38:10,365 p=7068 u=ubuntu n=ansible | PLAY RECAP **************************************************************************************************************
+2023-05-22 14:38:10,365 p=7068 u=ubuntu n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2023-05-22 14:40:26,194 p=8463 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ***************************************************
+2023-05-22 14:40:26,203 p=8463 u=ubuntu n=ansible | TASK [Gathering Facts] **************************************************************************************************
+2023-05-22 14:40:27,416 p=8463 u=ubuntu n=ansible | ok: [localhost]
+2023-05-22 14:40:27,432 p=8463 u=ubuntu n=ansible | TASK [Install  jdk, maven, git] *****************************************************************************************
+2023-05-22 14:40:30,045 p=8463 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-05-22 14:40:32,483 p=8463 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-05-22 14:40:39,283 p=8463 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-05-22 14:40:39,294 p=8463 u=ubuntu n=ansible | TASK [Clone source code from github] ************************************************************************************
+2023-05-22 14:40:40,602 p=8463 u=ubuntu n=ansible | changed: [localhost]
+2023-05-22 14:40:40,613 p=8463 u=ubuntu n=ansible | TASK [mvn install command to build artifact] ****************************************************************************
+2023-05-22 14:41:00,691 p=8463 u=ubuntu n=ansible | changed: [localhost]
+2023-05-22 14:41:00,701 p=8463 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] ********************************************************************************
+2023-05-22 14:41:01,823 p=8463 u=ubuntu n=ansible | failed: [localhost] (item=/home/ubuntu/ansible-aws-vpc/provision-stack/Vprofile-repo/target/vprofile-v2.war) => {"ansible_loop_var": "item", "changed": false, "checksum": "ab18159159cd4a33aa4fdd311fed380e28f51f6f", "item": "/home/ubuntu/ansible-aws-vpc/provision-stack/Vprofile-repo/target/vprofile-v2.war", "msg": "Destination directory files does not exist"}
+2023-05-22 14:41:01,828 p=8463 u=ubuntu n=ansible | PLAY RECAP **************************************************************************************************************
+2023-05-22 14:41:01,829 p=8463 u=ubuntu n=ansible | localhost                  : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-22 14:43:25,492 p=9954 u=ubuntu n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/ubuntu/ansible-aws-vpc/provision-stack/build.yml': line 50, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+     - name: Copy SQL file to files directory
+     ^ here
+
+2023-05-22 14:44:28,366 p=9970 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ***************************************************
+2023-05-22 14:44:28,375 p=9970 u=ubuntu n=ansible | TASK [Gathering Facts] **************************************************************************************************
+2023-05-22 14:44:29,664 p=9970 u=ubuntu n=ansible | ok: [localhost]
+2023-05-22 14:44:29,680 p=9970 u=ubuntu n=ansible | TASK [Install  jdk, maven, git] *****************************************************************************************
+2023-05-22 14:44:32,383 p=9970 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-05-22 14:44:34,851 p=9970 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-05-22 14:44:37,327 p=9970 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-05-22 14:44:37,339 p=9970 u=ubuntu n=ansible | TASK [Clone source code from github] ************************************************************************************
+2023-05-22 14:44:38,121 p=9970 u=ubuntu n=ansible | ok: [localhost]
+2023-05-22 14:44:38,131 p=9970 u=ubuntu n=ansible | TASK [mvn install command to build artifact] ****************************************************************************
+2023-05-22 14:44:38,145 p=9970 u=ubuntu n=ansible | skipping: [localhost]
+2023-05-22 14:44:38,155 p=9970 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] ********************************************************************************
+2023-05-22 14:44:39,192 p=9970 u=ubuntu n=ansible | failed: [localhost] (item=/home/ubuntu/ansible-aws-vpc/provision-stack/Vprofile-repo/target/vprofile-v2.war) => {"ansible_loop_var": "item", "changed": false, "checksum": "ab18159159cd4a33aa4fdd311fed380e28f51f6f", "item": "/home/ubuntu/ansible-aws-vpc/provision-stack/Vprofile-repo/target/vprofile-v2.war", "msg": "Destination directory files does not exist"}
+2023-05-22 14:44:39,197 p=9970 u=ubuntu n=ansible | PLAY RECAP **************************************************************************************************************
+2023-05-22 14:44:39,197 p=9970 u=ubuntu n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2023-05-22 14:49:08,516 p=11379 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ***************************************************
+2023-05-22 14:49:08,525 p=11379 u=ubuntu n=ansible | TASK [Gathering Facts] **************************************************************************************************
+2023-05-22 14:49:09,752 p=11379 u=ubuntu n=ansible | ok: [localhost]
+2023-05-22 14:49:09,767 p=11379 u=ubuntu n=ansible | TASK [Install  jdk, maven, git] *****************************************************************************************
+2023-05-22 14:49:12,454 p=11379 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2023-05-22 14:49:14,985 p=11379 u=ubuntu n=ansible | ok: [localhost] => (item=openjdk-8-jdk)
+2023-05-22 14:49:17,459 p=11379 u=ubuntu n=ansible | ok: [localhost] => (item=maven)
+2023-05-22 14:49:17,470 p=11379 u=ubuntu n=ansible | TASK [Clone source code from github] ************************************************************************************
+2023-05-22 14:49:18,264 p=11379 u=ubuntu n=ansible | ok: [localhost]
+2023-05-22 14:49:18,273 p=11379 u=ubuntu n=ansible | TASK [mvn install command to build artifact] ****************************************************************************
+2023-05-22 14:49:18,287 p=11379 u=ubuntu n=ansible | skipping: [localhost]
+2023-05-22 14:49:18,296 p=11379 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] ********************************************************************************
+2023-05-22 14:49:19,305 p=11379 u=ubuntu n=ansible | changed: [localhost] => (item=/home/ubuntu/ansible-aws-vpc/provision-stack/Vprofile-repo/target/vprofile-v2.war)
+2023-05-22 14:49:19,315 p=11379 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] *********************************************************************************
+2023-05-22 14:49:19,741 p=11379 u=ubuntu n=ansible | changed: [localhost]
+2023-05-22 14:49:19,757 p=11379 u=ubuntu n=ansible | PLAY RECAP **************************************************************************************************************
+2023-05-22 14:49:19,757 p=11379 u=ubuntu n=ansible | localhost                  : ok=5    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-05-22 14:49:59,597 p=12808 u=ubuntu n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] **************************************
+2023-05-22 14:49:59,606 p=12808 u=ubuntu n=ansible | TASK [Gathering Facts] **************************************************************************************************
+2023-05-22 14:50:01,568 p=12808 u=ubuntu n=ansible | ok: [cntl]
+2023-05-22 14:50:01,670 p=12808 u=ubuntu n=ansible | ok: [web01]
+2023-05-22 14:50:02,535 p=12808 u=ubuntu n=ansible | ok: [app01]
+2023-05-22 14:50:02,713 p=12808 u=ubuntu n=ansible | ok: [rmq01]
+2023-05-22 14:50:02,872 p=12808 u=ubuntu n=ansible | ok: [mc01]
+2023-05-22 14:50:04,421 p=12808 u=ubuntu n=ansible | ok: [db01]
+2023-05-22 14:50:04,438 p=12808 u=ubuntu n=ansible | TASK [Import VPC setup Variable] ****************************************************************************************
+2023-05-22 14:50:04,488 p=12808 u=ubuntu n=ansible | ok: [cntl]
+2023-05-22 14:50:04,508 p=12808 u=ubuntu n=ansible | ok: [web01]
+2023-05-22 14:50:04,533 p=12808 u=ubuntu n=ansible | ok: [app01]
+2023-05-22 14:50:04,556 p=12808 u=ubuntu n=ansible | ok: [rmq01]
+2023-05-22 14:50:04,556 p=12808 u=ubuntu n=ansible | ok: [mc01]
+2023-05-22 14:50:04,565 p=12808 u=ubuntu n=ansible | ok: [db01]
+2023-05-22 14:50:04,574 p=12808 u=ubuntu n=ansible | TASK [Update hosts file for all the hosts] ******************************************************************************
+2023-05-22 14:50:05,404 p=12808 u=ubuntu n=ansible | changed: [rmq01]
+2023-05-22 14:50:05,405 p=12808 u=ubuntu n=ansible | changed: [app01]
+2023-05-22 14:50:05,405 p=12808 u=ubuntu n=ansible | changed: [web01]
+2023-05-22 14:50:05,406 p=12808 u=ubuntu n=ansible | changed: [mc01]
+2023-05-22 14:50:05,453 p=12808 u=ubuntu n=ansible | changed: [cntl]
+2023-05-22 14:50:05,716 p=12808 u=ubuntu n=ansible | changed: [db01]
+2023-05-22 14:50:05,733 p=12808 u=ubuntu n=ansible | PLAY RECAP **************************************************************************************************************
+2023-05-22 14:50:05,734 p=12808 u=ubuntu n=ansible | app01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-22 14:50:05,734 p=12808 u=ubuntu n=ansible | cntl                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-22 14:50:05,734 p=12808 u=ubuntu n=ansible | db01                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-22 14:50:05,734 p=12808 u=ubuntu n=ansible | mc01                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-22 14:50:05,734 p=12808 u=ubuntu n=ansible | rmq01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-22 14:50:05,734 p=12808 u=ubuntu n=ansible | web01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
