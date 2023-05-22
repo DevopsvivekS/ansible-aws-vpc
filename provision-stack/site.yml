@@ -20,4 +20,4 @@
   import_playbook: appserver.yml
 
 - name: Setup Nginx webserver
-  import_playbook:
+  import_playbook: web.yml
